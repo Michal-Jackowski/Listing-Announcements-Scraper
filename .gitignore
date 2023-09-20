@@ -6,6 +6,7 @@ test.py
 
 # Session files
 *.session
+*.session-journal
 
 # Path files
 path.py
