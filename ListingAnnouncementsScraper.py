@@ -6,14 +6,14 @@ import path
 
 api_id = telegram_config.api_id
 api_hash = telegram_config.api_hash
-chats = [telegram_config.test_user_input_channel]
+chats = [telegram_config.user_input_channel]
 
 client = TelegramClient('Me', api_id, api_hash)
 df = pd.DataFrame()
 
 for chat in chats:
     with TelegramClient('test', api_id, api_hash) as client:
-        for message in client.iter_messages(chat, reverse=True):
+        for message in client.iter_messages(chat, limit = 9999999): # Reverse was artifical limiting messages to 100
             data = {"date" : message.date, "text" : message.text,}
             temp_df = pd.DataFrame(data, index=[1])
             df = df._append(temp_df)

@@ -1,1 +1,0 @@
-# Only 100 rows from Telegram => API Limit
