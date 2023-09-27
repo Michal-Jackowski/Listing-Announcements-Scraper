@@ -14,8 +14,4 @@
 
 ### Schedule
 - [x] Scrap full data from Telegram
-- [x] Save data to a file
-- [ ] Segregate data
-- [ ] Analyze the data
-- [ ] Visualize the data
-- [ ] Backtesting
+- [x] Save data to a file (Data is incomplete)
